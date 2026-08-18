@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zack De Boer — Full-Stack Developer</title>
+<meta name="description" content="Zack De Boer — Full-stack developer focused on backend systems, data pipelines, and AI integration.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Space+Mono:wght@400;700&family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- grain overlay -->
+<svg class="noise" aria-hidden="true">
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/></filter>
+  <rect width="100%" height="100%" filter="url(#grain)"/>
+</svg>
+
+<div class="progress-rail" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+
+<!-- side rail -->
+<aside class="side-rail">
+  <div class="rail-name">ZACK&nbsp;DE&nbsp;BOER</div>
+  <nav class="rail-dots" id="railDots">
+    <a href="#hero" data-label="Intro" class="dot active"></a>
+    <a href="#about" data-label="Dossier" class="dot"></a>
+    <a href="#work" data-label="Fieldwork" class="dot"></a>
+    <a href="#timeline" data-label="Record" class="dot"></a>
+    <a href="#contact" data-label="Contact" class="dot"></a>
+  </nav>
+</aside>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-type" aria-hidden="true">
+      <span data-speed="0.15">BACKEND</span>
+      <span data-speed="0.28">PIPELINES</span>
+      <span data-speed="0.4">AI&nbsp;INTEGRATION</span>
+    </div>
+
+    <div class="hero-content">
+      <p class="kicker reveal">Est. 2026 — Winnipeg, MB — File No. 001</p>
+      <h1 class="hero-title">
+        <span class="reveal-line"><span class="reveal-word">Full&#8209;stack</span></span>
+        <span class="reveal-line"><span class="reveal-word">developer,</span></span>
+        <span class="reveal-line"><span class="reveal-word reveal-word--italic">deliberately</span></span>
+        <span class="reveal-line"><span class="reveal-word">on&nbsp;the&nbsp;record.</span></span>
+      </h1>
+      <p class="hero-sub reveal">
+        I work mostly on backend systems, data pipelines, and AI integration, then build
+        the APIs and interfaces on top of them. Right now that's a live e-commerce
+        platform for Mavaro Studios; before that, an AI-graded examination platform
+        shipped in 8&nbsp;weeks against a 16&#8209;week estimate.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#work">View the case files →</a>
+        <a class="btn btn-ghost" href="assets/Zack_DeBoer_Resume.pdf" download>Download résumé</a>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span>scroll</div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-label="Technical skills">
+    <div class="ticker-track" id="tickerTrack">
+      <span>PYTHON</span><span class="dash">—</span>
+      <span>JAVASCRIPT</span><span class="dash">—</span>
+      <span>REACT</span><span class="dash">—</span>
+      <span>NEXT.JS</span><span class="dash">—</span>
+      <span>NODE.JS</span><span class="dash">—</span>
+      <span>SQL / MYSQL / MARIADB</span><span class="dash">—</span>
+      <span>REST APIS</span><span class="dash">—</span>
+      <span>JAVA</span><span class="dash">—</span>
+      <span>PHP</span><span class="dash">—</span>
+      <span>RUBY</span><span class="dash">—</span>
+      <span>DOCKER</span><span class="dash">—</span>
+      <span>LINUX / SHELL</span><span class="dash">—</span>
+      <span>C# / .NET</span><span class="dash">—</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-grid">
+      <div class="about-photo-wrap reveal">
+        <div class="about-photo">
+          <img src="assets/zack-photo.png" alt="Portrait of Zack De Boer">
+        </div>
+        <div class="stamp" aria-hidden="true">AVAILABLE<br>FOR&nbsp;HIRE</div>
+      </div>
+
+      <div class="about-copy">
+        <p class="section-number reveal">01 / Dossier</p>
+        <h2 class="reveal">The summary,<br>unabridged.</h2>
+        <p class="about-lead reveal">
+          Full-stack developer with a focus on backend systems, data pipelines, and AI
+          integration. Led development of a production examination platform, delivering
+          it in 8 weeks against a 16-week estimate. Comfortable working across the stack —
+          from parsing and structuring raw data to building the APIs and UI that serve it.
+        </p>
+
+        <dl class="fact-list reveal">
+          <div class="fact"><dt>Based in</dt><dd>Winnipeg, Manitoba</dd></div>
+          <div class="fact"><dt>Studying</dt><dd>Full Stack Web Development, Red River College Polytechnic</dd></div>
+          <div class="fact"><dt>Focused on</dt><dd>Backend logic, AI-assisted pipelines, structured data</dd></div>
+          <div class="fact"><dt>Currently</dt><dd>Open to co-op / junior developer roles</dd></div>
+        </dl>
+
+        <div class="counters reveal">
+          <div class="counter">
+            <span class="counter-num" data-count="8">0</span><span class="counter-suffix">wks</span>
+            <span class="counter-label">to ship a platform scoped at 16</span>
+          </div>
+          <div class="counter">
+            <span class="counter-num" data-count="12">0</span><span class="counter-suffix">+</span>
+            <span class="counter-label">languages &amp; frameworks in active use</span>
+          </div>
+          <div class="counter">
+            <span class="counter-num" data-count="2">0</span>
+            <span class="counter-label">full-stack platforms shipped end to end</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="work">
+    <p class="section-number reveal">02 / Fieldwork</p>
+    <h2 class="reveal work-title">Selected case files.</h2>
+
+    <div class="case-file reveal">
+      <div class="case-index">01</div>
+      <div class="case-visual case-visual--photo">
+        <div class="browser-chrome" aria-hidden="true"><span></span><span></span><span></span></div>
+        <img src="assets/mavaro-hero.png" alt="Mavaro Studios homepage — custom banner and vinyl printing platform">
+      </div>
+      <div class="case-body">
+        <span class="case-tag">Design &amp; Development — Mavaro Studios · Live</span>
+        <h3>Custom banner &amp; vinyl printing platform</h3>
+        <p>
+          An e-commerce platform for custom banners, decals, and retractable stands.
+          Customers lay their design out directly in the browser, get a free proof, and
+          have it printed and shipped from a Canadian shop. I designed and built the
+          whole thing, front to back.
+        </p>
+        <ul class="case-points">
+          <li><strong>Frontend:</strong> Next.js storefront and in-browser design editor, rendering live proofs for prints up to 20 feet wide.</li>
+          <li><strong>Backend:</strong> PHP backend handling order processing, proof generation, and the print production pipeline.</li>
+          <li><strong>Database:</strong> MariaDB schema for orders, saved designs, and shipment tracking.</li>
+        </ul>
+        <div class="case-stack">
+          <span>Next.js</span><span>PHP</span><span>MariaDB</span><span>UI/UX</span>
+        </div>
+        <a class="case-link" href="https://www.mavarostudios.com" target="_blank" rel="noopener">View live site ↗</a>
+      </div>
+    </div>
+
+    <div class="case-file case-file--alt reveal">
+      <div class="case-index">02</div>
+      <div class="case-visual case-visual--logo">
+        <img src="assets/rrc-ace-logo.png" alt="RRC Polytech logo">
+        <span class="logo-credit">Client: RRC Polytech — ACE Project Space</span>
+      </div>
+      <div class="case-body">
+        <span class="case-tag">Software Developer — ACE Project Space · 2026</span>
+        <h3>English examination platform</h3>
+        <p>
+          A full-stack examination platform that uses AI models to automatically grade
+          reading and listening comprehension responses. Took it from scope to
+          production in 8 weeks, against a 16-week estimate.
+        </p>
+        <ul class="case-points">
+          <li><strong>AI integration:</strong> automated grading of open-ended reading &amp; listening responses.</li>
+          <li><strong>Data pipeline:</strong> structured and cleaned datasets of ethical/societal discussion topics for consistent, repeatable AI output.</li>
+          <li><strong>Backend logic:</strong> handled asynchronous AI API calls, application state, and response validation before anything reached the frontend.</li>
+        </ul>
+        <div class="case-stack">
+          <span>Python</span><span>REST APIs</span><span>AI/LLM APIs</span><span>JSON pipelines</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-file reveal">
+      <div class="case-index">03</div>
+      <div class="case-visual case-visual--data">
+        <div class="db-mark" aria-hidden="true">
+          <div class="db-row db-row--head"><span>id</span><span>title</span><span>artist</span></div>
+          <div class="db-row"><span>014</span><span>—</span><span>—</span></div>
+          <div class="db-row"><span>015</span><span>—</span><span>—</span></div>
+          <div class="db-row"><span>016</span><span>—</span><span>—</span></div>
+        </div>
+      </div>
+      <div class="case-body">
+        <span class="case-tag">Academic Project</span>
+        <h3>Music organizing &amp; relational data app</h3>
+        <p>
+          A full-stack web app for cataloguing and searching a music collection, built
+          around a relational MySQL schema with REST APIs for filtering and search.
+        </p>
+        <ul class="case-points">
+          <li><strong>Database design:</strong> relational MySQL schema to catalog and search a music collection.</li>
+          <li><strong>API design:</strong> REST APIs to filter and serve data to the frontend.</li>
+          <li><strong>Frontend:</strong> user flow, wireframes, and reusable UI components designed from scratch.</li>
+        </ul>
+        <div class="case-stack">
+          <span>MySQL</span><span>REST APIs</span><span>JavaScript</span><span>UI/UX</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline" class="timeline">
+    <p class="section-number reveal">03 / Record</p>
+    <h2 class="reveal">Education &amp; experience.</h2>
+
+    <div class="timeline-track">
+      <div class="timeline-line" id="timelineLine"></div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2025 — 2026</span>
+        <h3>Full Stack Web Development</h3>
+        <p class="timeline-org">Red River College Polytechnic — Exchange District Campus</p>
+        <p>Currently enrolled. Coursework: Advanced JavaScript, API Design, SQL &amp; Database Management, Cloud Basics, Systems Analysis, Agile Software Development.</p>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2026</span>
+        <h3>Software Developer</h3>
+        <p class="timeline-org">ACE Project Space</p>
+        <p>Built and shipped a production AI-assisted examination platform in 8 weeks, against a 16-week estimate.</p>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2024 — Present</span>
+        <h3>Academic &amp; Collaborative Projects</h3>
+        <p class="timeline-org">Team-based coursework</p>
+        <p>Worked in Agile sprints designing, building, and iterating on full-stack features. Reviewed teammates' code and wrote schemas, user stories, and acceptance criteria.</p>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2017 — 2024</span>
+        <h3>Customer Service &amp; Seasonal Roles</h3>
+        <p class="timeline-org">Various Employers</p>
+        <p>Communicated clearly under time pressure, picked up new tools and processes quickly, and built a consistent record of reliability across every role.</p>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2023</span>
+        <h3>Grade 12 Completion</h3>
+        <p class="timeline-org">Murdoch MacKay Collegiate</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <p class="section-number reveal">04 / Contact</p>
+    <h2 class="reveal contact-title">End of file.<br>Let's&nbsp;talk.</h2>
+    <p class="reveal contact-sub">Open to co-op placements and junior developer roles.</p>
+
+    <div class="contact-links reveal">
+      <a class="contact-link" href="mailto:zackdb2005@gmail.com">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">zackdb2005@gmail.com</span>
+      </a>
+      <a class="contact-link" href="tel:+14318877481">
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">(431) 887-7481</span>
+      </a>
+      <a class="contact-link" href="https://github.com/zdeboer" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">github.com/zdeboer</span>
+      </a>
+    </div>
+
+    <footer class="footer">
+      <span>Zack De Boer © 2026</span>
+      <span>Hand-coded with HTML, CSS, and JavaScript. No template.</span>
+    </footer>
+  </section>
+
+</main>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
